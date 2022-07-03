@@ -1,0 +1,36 @@
+int[] CreateArray(int size) { 
+
+    int[] array= new int[size];
+
+    for (int i = 0; i < size; i++)
+{
+
+
+        array[i] = new Random().Next(1, 100);
+
+
+
+}return array;
+
+}
+
+void MyArray(int[] array) {
+
+
+    for (int i = 0; i < array.Length; i++) {
+
+        Console.Write(array[i] +  " ");
+
+
+     }
+        Console.WriteLine();
+
+
+}
+
+
+
+int size = Convert.ToInt32(new Random().Next(2, 9));
+int[] MyArrays = CreateArray(size);
+
+MyArray(MyArrays);
